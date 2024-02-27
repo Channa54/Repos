@@ -1,0 +1,39 @@
+package epack;
+
+
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Demo {
+
+	/*WebDriver driver;
+	@Test
+	public void Login(){*/
+	
+		public static void main (String[] args) {
+		System.setProperty("webdriver.chromrdriver.setup", "C:\\Users\\CADEPPA\\OneDrive - Capgemini\\Documents\\Imp Box\\ExtentReportsDemoproj\\drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://lms.in.capgemini.com/");
+		
+		 driver.findElement(By.linkText("ApplyLeave")).click();
+		String actultext = driver.findElement(By.xpath("//label[text()='Effective Leave']")).getText();
+		
+		if( actultext.equalsIgnoreCase("Effective Leave")) {
+			System.out.println("paased");
+		}
+		else {
+			System.out.println("False");
+		}
+		}
+}
+
+	  
+	  
+

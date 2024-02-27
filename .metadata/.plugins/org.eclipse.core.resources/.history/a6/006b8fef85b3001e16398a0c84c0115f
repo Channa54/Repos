@@ -1,0 +1,9 @@
+package Demo.General;
+
+public class A7 extends A6 {
+	
+	String w = "go";
+	
+	
+
+}

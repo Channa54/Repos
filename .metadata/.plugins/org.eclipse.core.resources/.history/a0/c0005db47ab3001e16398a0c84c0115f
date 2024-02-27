@@ -1,0 +1,17 @@
+package Demo.General;
+
+public class A3 {
+
+	
+	private A3() {
+		System.out.println("hii");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}
